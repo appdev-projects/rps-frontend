@@ -1,0 +1,98 @@
+* {
+  /* border: thin red solid; */
+}
+
+body {
+  font-family: 'Neucha', cursive;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cabin Sketch', cursive;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: normal;
+}
+
+.layout-container {
+  margin: auto;
+  width: 960px;
+}
+
+.layout-cell {
+  vertical-align: top;
+}
+
+.panel {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-color: black;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.border-win {
+  border-color: green;
+}
+
+.border-tie {
+  border-color: orange;
+}
+
+.border-lose {
+  border-color: red;
+}
+
+.text-win {
+  color: green;
+}
+
+.text-tie {
+  color: orange;
+}
+
+.text-lose {
+  color: red;
+}
+
+.panel-image {
+  width: 100%;
+}
+
+.moves-table {
+  text-align: center;
+  width: 100%;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.fancy-link {
+  border-color: rgb(23, 162, 184);
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 2px;
+  box-sizing: border-box;
+  color: rgb(23, 162, 184);
+  display: inline-block;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 0.5s;
+  transition-property: all;
+  width: 100%;
+}
+
+.fancy-link:hover {
+  background-color: rgb(23, 162, 184);
+  color: white;
+}
+
+.fancy-link-active {
+  background-color: rgb(23, 162, 184);
+  color: white;
+}

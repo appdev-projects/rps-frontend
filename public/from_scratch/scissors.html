@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>You played scissors!</title>
+
+  <!-- Expand the number of characters we can use in the document beyond basic ASCII 🎉 -->
+  <meta charset="utf-8">
+
+  <!-- Connect Google Web Fonts CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Neucha" rel="stylesheet">
+
+  <!-- Connect our custom CSS -->
+  <link rel="stylesheet" href="our_styles.css">
+
+  <!-- Connect Font Awesome CSS -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.2/css/all.css">
+</head>
+
+<body>
+  <table class="layout-container">
+    <tr class="layout-row">
+      <td colspan="2" class="layout-cell">
+        <a href="rock.html" class="fancy-link">
+          <i class="far fa-hand-rock fa-fw"></i>
+
+          Play Rock
+        </a>
+      </td>
+
+      <td colspan="2" class="layout-cell">
+        <a href="paper.html" class="fancy-link">
+          <i class="far fa-hand-paper fa-fw"></i>
+
+          Play Paper
+        </a>
+      </td>
+
+      <td colspan="2" class="layout-cell">
+        <a href="scissors.html" class="fancy-link fancy-link-active">
+          <i class="far fa-hand-scissors fa-fw"></i>
+
+          Play Scissors
+        </a>
+      </td>
+    </tr>
+
+    <tr class="layout-row">
+      <td class="layout-cell" colspan="3">
+        <div class="panel border-win text-win centered-text">
+          <h2>We played scissors!</h2>
+
+          <p>
+            <i class="far fa-hand-scissors fa-10x"></i>
+          </p>
+        </div>
+      </td>
+
+      <td class="layout-cell" colspan="3">
+        <div class="panel border-lose text-lose centered-text">
+          <h2>They played paper!</h2>
+
+          <p>
+            <i class="far fa-hand-paper fa-10x"></i>
+          </p>
+        </div>
+      </td>
+    </tr>
+
+    <tr class="layout-row">
+      <td class="layout-cell" colspan="6">
+        <div class="panel border-win text-win centered-text">
+          <h2>
+            We won!
+          </h2>
+        </div>
+      </td>
+    </tr>
+
+    <tr class="layout-row">
+      <td class="layout-cell centered-text" colspan="6">
+        <a href="index.html">
+          Rules
+        </a>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
