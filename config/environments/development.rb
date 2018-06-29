@@ -1,17 +1,17 @@
 Rails.application.configure do
-    path = Rails.root.join("whitelist.yml")
-    default_whitelist_path = Rails.root.join("default_whitelist.yml")
-    whitelisted_ips = []
+  path = Rails.root.join("whitelist.yml")
+  default_whitelist_path = Rails.root.join("default_whitelist.yml")
+  whitelisted_ips = []
 
-    if File.exist?(path)
-      whitelisted_ips = YAML.load_file(path)
-    end
+  if File.exist?(path)
+    whitelisted_ips = YAML.load_file(path)
+  end
 
-    if File.exist?(default_whitelist_path)
-      whitelisted_ips = whitelisted_ips.concat(YAML.load_file(default_whitelist_path))
-    end
+  if File.exist?(default_whitelist_path)
+    whitelisted_ips = whitelisted_ips.concat(YAML.load_file(default_whitelist_path))
+  end
 
-    config.web_console.whitelisted_ips = whitelisted_ips
+  config.web_console.whitelisted_ips = whitelisted_ips
   config.action_mailer.default_url_options = { host: "localhost", port: 3000 }
   # Settings specified here will take precedence over those in config/application.rb.
 
@@ -28,12 +28,12 @@ Rails.application.configure do
 
   # Enable/disable caching. By default caching is disabled.
   # Run rails dev:cache to toggle caching.
-  if Rails.root.join('tmp', 'caching-dev.txt').exist?
+  if Rails.root.join("tmp", "caching-dev.txt").exist?
     config.action_controller.perform_caching = true
 
     config.cache_store = :memory_store
     config.public_file_server.headers = {
-      'Cache-Control' => "public, max-age=#{2.days.to_i}"
+      "Cache-Control" => "public, max-age=#{2.days.to_i}",
     }
   else
     config.action_controller.perform_caching = false

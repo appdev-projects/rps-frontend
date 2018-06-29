@@ -29,6 +29,7 @@
 # Ignore dotenv files
 /.env*
 
+cloud9_plugins.sh
 .rbenv-gemsets
 examples.txt
 grades.yml
